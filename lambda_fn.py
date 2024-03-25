@@ -7,7 +7,7 @@ def lambda_handler(event, context):
     client = boto3.client('sagemaker-runtime')
 
     # Set the name of the SageMaker endpoint to invoke
-    endpoint_name = 'partBSTS' #  endpoint name 
+    endpoint_name = ENDPOINTNAME #  endpoint name 
 
     # Set the content type of the input data
     content_type = 'application/json'
